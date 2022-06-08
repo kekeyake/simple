@@ -7,3 +7,70 @@ $viewport : 640;
 
 @import 'reset';
 
+:root {
+    --bg-1:#181a20;
+    --bd-1:#282a2b;
+    --footer-height:vw(129);
+}
+body {
+    background-color: var(--bg-1);
+    display: flex;
+    flex-flow: column wrap;
+    height: 100vh;
+}
+.main {
+    min-height: var(--footer-height);
+    flex:1;
+}
+.footer {
+    margin-top: auto;
+    border-top: 1px solid var(--bd-1);
+    background-color: var(--bg-1);
+    &__nav {
+        display: flex;
+        height: vw(128);
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item {
+        padding: vw(40) 2rem vw(47);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        &.home {
+            background-image: url(../img/nav_home_off.png);
+            background-size: vw(44) vw(42);
+            &.on {
+                background-image: url(../img/nav_home_on.png);
+            }
+        }
+        &.app {
+            background-image: url(../img/nav_app_off.png);
+            background-size: vw(40) vw(42);
+            &.on {
+                background-image: url(../img/nav_app_on.png);
+            }
+        }
+        &.dao {
+            background-image: url(../img/nav_dao_off.png);
+            background-size: vw(42) vw(42);
+            &.on {
+                background-image: url(../img/nav_dao_on.png);
+            }
+        }
+        &.swap {
+            background-image: url(../img/nav_swap_off.png);
+            background-size: vw(48) vw(42);
+            &.on {
+                background-image: url(../img/nav_swap_on.png);
+            }
+        }
+        &.wallet {
+            background-image: url(../img/nav_wallet_off.png);
+            background-size: vw(48) vw(41);
+            &.on {
+                background-image: url(../img/nav_wallet_on.png);
+            }
+        }
+    }
+}
