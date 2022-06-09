@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple App</title>
-    <link rel="icon" href="./assets/img/favicon.svg">
+    <link rel="icon" href="#a">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" as="style">
@@ -16,16 +16,187 @@
 </head>
 
 <body>
-    <main class="main"></main>
+    <main class="main">
+
+        <section class="main__titWrap">
+            <h1 class="main__tit">Simple DAO-posts</h1>
+            <a href="#a" class="main__viewAll">View All</a>
+        </section>
+
+        <section class="main__tab">
+            <a href="#a" data-tab-link="newCont" class="main__link main__link--on">New</a>
+            <a href="#a" data-tab-link="topCont" class="main__link">Top</a>
+            <a href="#a" data-tab-link="hotCont" class="main__link">Hot</a>
+        </section>
+
+        <section class="main__tabContWrap">
+            <section class="main__tabCont" data-tab-target="newCont" data-tab-visible="visible">
+                <article class="contArticle">
+                    <a href="#a" class="contArticle__link">
+                        <div class="contArticle__imgWrap">
+                            <img src="assets/img/@cont_01.png" alt="news">
+                        </div>
+                        <p class="contArticle__txt">"루나 브라더스 By 아서 헤이즈"</p>
+                    </a>
+                </article>
+                <article class="contArticle">
+                    <a href="#a" class="contArticle__link">
+                        <div class="contArticle__imgWrap">
+                            <img src="assets/img/@cont_02.png" alt="news">
+                        </div>
+                        <p class="contArticle__txt">이제 LFG(루나파운데이션가드)에는 $AVAX만 남았네</p>
+                    </a>
+                </article>
+            </section>
+
+            <section class="main__tabCont" data-tab-target="topCont" data-tab-visible="">
+                <article class="contArticle">
+                    <a href="#a" class="contArticle__link">
+                        <div class="contArticle__imgWrap">
+                            <img src="assets/img/@cont_01.png" alt="news">
+                        </div>
+                        <p class="contArticle__txt">"222루나 브라더스 By 아서 헤이즈"</p>
+                    </a>
+                </article>
+                <article class="contArticle">
+                    <a href="#a" class="contArticle__link">
+                        <div class="contArticle__imgWrap">
+                            <img src="assets/img/@cont_02.png" alt="news">
+                        </div>
+                        <p class="contArticle__txt">이제 LFG(루나파운데이션가드)에는 $AVAX만 남았네</p>
+                    </a>
+                </article>
+            </section>
+
+            <section class="main__tabCont" data-tab-target="hotCont" data-tab-visible="">
+                <article class="contArticle">
+                    <a href="#a" class="contArticle__link">
+                        <div class="contArticle__imgWrap">
+                            <img src="assets/img/@cont_01.png" alt="news">
+                        </div>
+                        <p class="contArticle__txt">"333루나 브라더스 By 아서 헤이즈"</p>
+                    </a>
+                </article>
+                <article class="contArticle">
+                    <a href="#a" class="contArticle__link">
+                        <div class="contArticle__imgWrap">
+                            <img src="assets/img/@cont_02.png" alt="news">
+                        </div>
+                        <p class="contArticle__txt">이제 LFG(루나파운데이션가드)에는 $AVAX만 남았네</p>
+                    </a>
+                </article>
+            </section>
+        </section>
+
+        <section class="main__contWrap">
+            <section class="main__titWrap">
+                <h2 class="main__h2">Recommend Apps</h2>
+                <a href="#a" class="main__viewAll">View All</a>
+            </section>
+            <section class="appsWrap">
+                <ul class="appsWrap__list">
+                    <li class="appsWrap__item">
+                        <div class="appsWrap__imgWrap">
+                            <img src="assets/img/@app_01.png" alt="app1">
+                        </div>
+                        <p class="appsWrap__t1">BSC</p>
+                        <p class="appsWrap__t2">1inch</p>
+                    </li>
+                    <li class="appsWrap__item">
+                        <div class="appsWrap__imgWrap">
+                            <img src="assets/img/@app_02.png" alt="app2">
+                        </div>
+                        <p class="appsWrap__t1">Ethereum</p>
+                        <p class="appsWrap__t2">OpenSea</p>
+                    </li>
+                    <li class="appsWrap__item">
+                        <div class="appsWrap__imgWrap">
+                            <img src="assets/img/@app_01.png" alt="app1">
+                        </div>
+                        <p class="appsWrap__t1">BSC</p>
+                        <p class="appsWrap__t2">1inch</p>
+                    </li>
+                    <li class="appsWrap__item">
+                        <div class="appsWrap__imgWrap">
+                            <img src="assets/img/@app_02.png" alt="app2">
+                        </div>
+                        <p class="appsWrap__t1">Ethereum</p>
+                        <p class="appsWrap__t2">OpenSea</p>
+                    </li>
+                    <li class="appsWrap__item">
+                        <div class="appsWrap__imgWrap">
+                            <img src="assets/img/@app_01.png" alt="app1">
+                        </div>
+                        <p class="appsWrap__t1">BSC</p>
+                        <p class="appsWrap__t2">1inch</p>
+                    </li>
+                    <li class="appsWrap__item">
+                        <div class="appsWrap__imgWrap">
+                            <img src="assets/img/@app_02.png" alt="app2">
+                        </div>
+                        <p class="appsWrap__t1">Ethereum</p>
+                        <p class="appsWrap__t2">OpenSea</p>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="main__contWrap">
+            <section class="main__titWrap">
+                <h2 class="main__h2">Simple Promotion</h2>
+                <a href="#a" class="main__viewAll">View All</a>
+            </section>
+            <section class="promotionWrap">
+                <ul class="promotionWrap__list">
+                    <li class="promotionWrap__item">
+                        <a href="#a"><img src="assets/img/@protmotion_01.png" alt="promotion1"></a>
+                    </li>
+                    <li class="promotionWrap__item">
+                        <a href="#a"><img src="assets/img/@protmotion_02.png" alt="promotion2"></a>
+                    </li>
+                    <li class="promotionWrap__item">
+                        <a href="#a"><img src="assets/img/@protmotion_01.png" alt="promotion1"></a>
+                    </li>
+                    <li class="promotionWrap__item">
+                        <a href="#a"><img src="assets/img/@protmotion_02.png" alt="promotion2"></a>
+                    </li>
+                </ul>
+            </section>            
+        </section>
+
+    </main>
     <footer class="footer">
         <nav class="footer__nav">
-            <a href="#a" class="footer__item home"></a>
+            <a href="#a" class="footer__item home on"></a>
             <a href="#a" class="footer__item app"></a>
             <a href="#a" class="footer__item dao"></a>
             <a href="#a" class="footer__item swap"></a>
             <a href="#a" class="footer__item wallet"></a>
         </nav>
     </footer>
+    <script>
+        let tabLinks = document.querySelectorAll(".main__link");        
+        let link;
+        for (const tabLink of tabLinks) {
+            tabLink.addEventListener("click", function(link) {
+                link = this.getAttribute("data-tab-link"); 
+                
+                this.classList.add("main__link--on");
+                for (let sibling of this.parentNode.children) {
+                    if (sibling !== this) sibling.classList.remove("main__link--on");
+                }
+                const tabCont = document.querySelectorAll(".main__tabCont");
+                tabCont.forEach(section => {                    
+                    const tabTg = section.getAttribute("data-tab-target");
+                    if ( tabTg == link ) {
+                        section.setAttribute("data-tab-visible","visible");
+                    } else {
+                        section.setAttribute("data-tab-visible","");
+                    }
+                });
+            });
+        }
+    </script>
 </body>
 
 </html>
